@@ -1,0 +1,14 @@
+.footer {
+    margin-top: 1%;
+    height: 40vh;
+    background-color: #FFD1DC;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
