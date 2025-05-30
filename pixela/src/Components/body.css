@@ -131,6 +131,7 @@ body {
     color: #A94064;
     margin: 20px 20px;
     font-size: 20px;
+    pointer-events: none;
 }
 
 #container-2 #box-2 a {
