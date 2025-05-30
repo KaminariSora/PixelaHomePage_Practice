@@ -1,45 +1,15 @@
-import './navBar.css'
 import './body.css'
 import './footer.css'
-import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faXTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
+import Header from '../Components/header';
 
 
 const Home = () => {
-    const [showMenu, setShowMenu] = useState(false);
-    const ToggleMenu = () => {
-        setShowMenu(!showMenu);
-        console.log('click')
-    }
-
     return (
         <div className='wrap'>
-            <header className="header">
-                <a href='/' className='logo'><img src='./Images/Pixela.png'></img></a>
-                <nav className="nav container">
-                    {/* NavMenu */}
-                    <div className={`navMenu ${showMenu ? 'showMenu' : ''}`}>
-                        <ul className="navList" type="none">
-                            <li className="listItem"><a href='' className='quicksand navLink'>Home</a></li>
-                            <li className="listItem"><a href='' className='quicksand navLink'>Member</a></li>
-                            <li className="listItem"><a href='' className='quicksand navLink'>Song</a></li>
-                            <li className="listItem"><a href='' className='quicksand navLink'>Market</a></li>
-                            <li className="listItem"><a href='' className='quicksand navLink'>Company</a></li>
-                            <li className="listItem"><a href='' className='quicksand navLink'>Contact</a></li>
-                        </ul>
-                        <div className="navClose" onClick={ToggleMenu}>
-                            <FontAwesomeIcon icon={faXmark} />
-                        </div>
-                    </div>
-                </nav>
-                <div className="nav_action">
-                    <div className="navToggle" onClick={ToggleMenu}>
-                        <FontAwesomeIcon icon={faBars} />
-                    </div>
-                </div>
-            </header>
+            <Header/>
             <div className='container'>
                 <div className='video-wrapper' id='container-1'>
                     <video autoPlay muted loop playsInline className="background-video">
@@ -56,7 +26,7 @@ const Home = () => {
                             followers in Thailand!</h6>
                     </div>
                     <div className="box" id='box-2'>
-                        <img src='./Images/X.png'></img>
+                        <img src='./Images/X.png' alt='X'></img>
                         <h6>ติดตามข่าวสารได้ที่ (Twitter) หลัก Pixela</h6>
                         <a href='https://x.com/PixelaProject' target="_blank">@PixelaProject</a>
                     </div>
@@ -65,14 +35,14 @@ const Home = () => {
                             <img src='./Images/Debirun_1.jpg'></img>
                         </div>
                         <h6 className='quicksand'>รูปภาพโฆษณาสินค้า</h6>
-                        <a href='#' className='anonymous-pro-regular'>ไปหน้าร้านค้า &gt;</a>
+                        <Link to="/Market" className='anonymous-pro-regular'>ไปหน้าร้านค้า &gt;</Link>
                     </div>
                     <div className="box" id='box-4'>
                         <div className='image-wrapper'>
                             <img src='./Images/Debirun_2.jpg'></img>
                         </div>
                         <h6 className='quicksand'>รูปภาพโฆษณาสินค้า</h6>
-                        <a href='#' className='anonymous-pro-regular'>ไปหน้าร้านค้า &gt;</a>
+                        <Link to="/Market" className='anonymous-pro-regular'>ไปหน้าร้านค้า &gt;</Link>
                     </div>
                 </div>
 
