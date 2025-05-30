@@ -4,21 +4,41 @@ import './footer.css'
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faXTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 
 
-const home = () => {
+const Home = () => {
+    const [showMenu, setShowMenu] = useState(false);
+    const ToggleMenu = () => {
+        setShowMenu(!showMenu);
+        console.log('click')
+    }
+
     return (
         <div className='wrap'>
-            <header className='header'>
+            <header className="header">
                 <a href='/' className='logo'><img src='./Images/Pixela.png'></img></a>
-                <nav className='navBar'>
-                    <a href='' className='quicksand'>Home</a>
-                    <a href='' className='quicksand'>Member</a>
-                    <a href='' className='quicksand'>Song</a>
-                    <a href='' className='quicksand'>Market</a>
-                    <a href='' className='quicksand'>Company</a>
-                    <a href='' className='quicksand'>Contact</a>
+                <nav className="nav container">
+                    {/* NavMenu */}
+                    <div className={`navMenu ${showMenu ? 'showMenu' : ''}`}>
+                        <ul className="navList" type="none">
+                            <li className="listItem"><a href='' className='quicksand navLink'>Home</a></li>
+                            <li className="listItem"><a href='' className='quicksand navLink'>Member</a></li>
+                            <li className="listItem"><a href='' className='quicksand navLink'>Song</a></li>
+                            <li className="listItem"><a href='' className='quicksand navLink'>Market</a></li>
+                            <li className="listItem"><a href='' className='quicksand navLink'>Company</a></li>
+                            <li className="listItem"><a href='' className='quicksand navLink'>Contact</a></li>
+                        </ul>
+                        <div className="navClose" onClick={ToggleMenu}>
+                            <FontAwesomeIcon icon={faXmark} />
+                        </div>
+                    </div>
                 </nav>
+                <div className="nav_action">
+                    <div className="navToggle" onClick={ToggleMenu}>
+                        <FontAwesomeIcon icon={faBars} />
+                    </div>
+                </div>
             </header>
             <div className='container'>
                 <div className='video-wrapper' id='container-1'>
@@ -29,10 +49,10 @@ const home = () => {
                 <div className='innerContainer' id='container-2'>
                     <div className="box">
                         <h1 className='quicksand'>Pixela Project คือ?</h1>
-                        <h6 className='quicksand' id='description'>Pixela Official Co., Ltd. was founded in 2021 with the vision to make 
-                            virtual characters and virtual influencers (vtubers) that combine the cuteness, funniness 
+                        <h6 className='quicksand' id='description'>Pixela Official Co., Ltd. was founded in 2021 with the vision to make
+                            virtual characters and virtual influencers (vtubers) that combine the cuteness, funniness
                             and talents with the easy to enjoy anime style avatar.</h6>
-                        <h6 className='quicksand' id='description'>Right now, we have 29 Vtubers in our company with more than 1 million 
+                        <h6 className='quicksand' id='description'>Right now, we have 29 Vtubers in our company with more than 1 million
                             followers in Thailand!</h6>
                     </div>
                     <div className="box" id='box-2'>
@@ -55,7 +75,7 @@ const home = () => {
                         <a href='#' className='anonymous-pro-regular'>ไปหน้าร้านค้า &gt;</a>
                     </div>
                 </div>
-                
+
             </div>
             <footer className='footer'>
                 <div className='footer-container'>
@@ -80,7 +100,7 @@ const home = () => {
                                 <FontAwesomeIcon icon={faXTwitter} />: X(Twitter) <span className='light-weight-text'>(@PixelaProject)</span>
                             </a>
                         </li>
-                            
+
                         <li>
                             <a href='https://www.facebook.com/pixelaproject' target='_blank'>
                                 <FontAwesomeIcon icon={faFacebook} />: Facebook <span className='light-weight-text'>(/pixelaproject)</span>
@@ -93,4 +113,4 @@ const home = () => {
     )
 }
 
-export default home
+export default Home

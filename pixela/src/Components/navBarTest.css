@@ -1,0 +1,90 @@
+.header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #FF6EC7;
+    font-weight: bold;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.navBar {
+    display: none;
+}
+
+.navBar a {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #FF6EC7;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.navBar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background: #FF6EC7;
+    transition: .3s;
+}
+
+.navBar a:hover::before {
+    width: 100%;
+}
+
+/* -------------------
+    toggle zone
+---------------------- */
+
+.showMenu {
+    display: inline-block;
+}
+
+.nav_action {
+    position: absolute;
+    right: 10%;
+    display: none;
+}
+
+.navToggle,
+.navClose {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+/* Navigation for mobile */
+@media screen and (max-width: 1150px) {
+    .nav_action {
+        display: inline-block;
+    }
+}
+
+/* navigation for large device */
+@media screen and (min-width:1150px) {
+    .nav_action,
+    .navClose {
+        display: none;
+    }
+
+    .navBar {
+        display: inline-block;
+    }
+}
