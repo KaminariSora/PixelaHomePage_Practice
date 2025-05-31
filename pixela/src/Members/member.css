@@ -165,7 +165,7 @@
 }
 
 /* -------------------
-    second generation
+    third generation
 ---------------------- */
 
 .third {
@@ -195,6 +195,266 @@
     border-color: #6ba9f6;
 }
 
+#arlin {
+    background: #c94b47;
+    border-color: #c94b47;
+}
+
+#elze {
+    background: linear-gradient(to right, #7285d8, #3ab8e1);
+    border-color: transparent;
+}
+
+#ciala {
+    background: #face75;
+    border-color: #face75;
+}
+
+/* -------------------
+    forth generation
+---------------------- */
+
+.forth {
+    background: #e7ca83;
+}
+
+.section .generation .mystic{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section .generation .mystic::before {
+    content: '4th generation';
+    font-size: 1rem;
+    width: 100%;
+    color: #78a5af;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+#melony {
+    background: #d5dfa0;
+    border-color: #d5dfa0;
+}
+
+#mikael {
+    background: #c0ace7;
+    border-color: #c0ace7;
+}
+
+#lilibelle {
+    background: #e9a9cb;
+    border-color: #e9a9cb;
+}
+
+#sireen {
+    background: linear-gradient(to right, #82bde5, #bea8f9);
+    border-color: transparent;
+}
+
+#naar {
+    background: #bba0d5;
+    border-color: #bba0d5;
+}
+
+/* -------------------
+    solo generation
+---------------------- */
+
+.solo {
+    background: #fff;
+}
+
+.section .generation .sololist{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.section .generation .sololist::before {
+    content: '';
+    font-size: 1rem;
+    width: 100%;
+    color: #78a5af;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+#roselia {
+    background: #cd3e59;
+    border-color: #cd3e59;
+}
+
+#hydrangea {
+    background: linear-gradient(to right, #a2a9fa, #8fc6f5);
+    border-color: transparent;
+}
+
+#divana {
+    background: linear-gradient(to right, #d9b4e0, #eed9a2);
+    border-color: transparent;
+}
+
+/* -------------------
+    destiny
+---------------------- */
+
+.destiny {
+    background: #201b17;
+}
+
+.section .generation .pixela-destiny{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section .generation .pixela-destiny::before {
+    content: '';
+    font-size: 1rem;
+    width: 100%;
+    color: #78a5af;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+#grimmus {
+    background: #464267;
+    border-color: #464267;
+}
+
+#shuun {
+    background: #747cc5;
+    border-color: #747cc5;
+}
+
+#zéphyr {
+    background: #4de2eb;
+    border-color: #4de2eb;
+}
+
+#blythe {
+    background: #f6db7c;
+    border-color: #f6db7c;
+}
+
+/* -------------------
+    worldend
+---------------------- */
+
+.fifth {
+    background: #231464;
+}
+
+.section .generation .worldend{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section .generation .worldend::before {
+    content: '';
+    font-size: 1rem;
+    width: 100%;
+    color: #78a5af;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+#ami {
+    background: #74e1e8;
+    border-color: #74e1e8;
+}
+
+#xonebu {
+    background: #9b87e7;
+    border-color: #9b87e7;
+}
+
+#tsururu {
+    background: linear-gradient(to right, #8ab3df, #b1b7e7);
+    border-color: transparent;
+}
+
+#mildr {
+    background: #fcb6d2;
+    border-color: #fcb6d2;
+}
+
+#debirun {
+    background: linear-gradient(to right, #7e87fc, #a787e8);
+    border-color: transparent;
+}
+
+#ashyra {
+    background: #f99966;
+    border-color: #f99966;
+}
+
+/* -------------------
+    Lumina first myth
+---------------------- */
+
+.lumina-first-myth {
+    background: #368ab9;
+}
+
+.section .generation .first-myth{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section .generation .first-myth::before {
+    content: '';
+    font-size: 1rem;
+    width: 100%;
+    color: #78a5af;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+/* -------------------
+    Lumina world end
+---------------------- */
+
+.lumina-world-end {
+    background: #0c1512;
+}
+
+.section .generation .world-end{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section .generation .world-end::before {
+    content: '';
+    font-size: 1rem;
+    width: 100%;
+    color: #78a5af;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
 
 @media only screen and (max-width: 768px) {
     .section {
