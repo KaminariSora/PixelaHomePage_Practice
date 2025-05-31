@@ -1,18 +1,215 @@
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .body {
     margin-top: 6rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     height: 100vh;
 }
 
 .section {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
-    height: 33dvh;
-    background: #FF6EC7;
-    border: 1px solid black;
+    height: auto;
+}
+
+.section .generation,
+.section .member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.member {
+    gap: 5px;
+    padding: 5% 0%; 
+    justify-content: start !important;
+}
+
+.member span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.member span img {
+    width: auto;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.member-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* -------------------
+    first generation
+---------------------- */
+
+.first {
+    background-color: #FFD1DC;
+}
+
+.section .generation .project{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #A94064;
+}
+
+.section .generation .project::before {
+    content: '1st generation';
+    font-size: 1rem;
+    width: 100%;
+    color: #FF6EC7;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+#hongfei {
+    background: #f8ac78;
+    border-color: #f8ac78;
+}
+
+#juju {
+    background: #a5c7a4;
+    border-color: #a5c7a4;
+}
+
+#zelina {
+    background: #69bbe3;
+    border-color: #69bbe3;
+}
+
+#melita {
+    background: #c78dca;
+    border-color: #c78dca;
+}
+
+/* -------------------
+    second generation
+---------------------- */
+
+.second {
+    background: #2f9fe6;
+}
+
+.section .generation .isekai{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.section .generation .isekai::before {
+    content: '2nd generation';
+    font-size: 1rem;
+    width: 100%;
+    color: #f3fcff;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+#estaa {
+    background: #5fb4fd;
+    border-color: #5fb4fd;
+}
+
+#elvene {
+    background: #99d0b0;
+    border-color: #99d0b0;
+}
+
+#lafy {
+    background: #9494ec;
+    border-color: #9494ec;
+}
+
+#kona {
+    background: #f88765;
+    border-color: #f88765;
+}
+
+#mewten {
+    background: #bb96e2;
+    border-color: #bb96e2;
+}
+
+#reirin {
+    background: #6780d3;
+    border-color: #6780d3;
+}
+
+/* -------------------
+    second generation
+---------------------- */
+
+.third {
+    background: linear-gradient(to bottom, #dd2205, #130303);
+}
+
+.section .generation .legend{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section .generation .legend::before {
+    content: '3rd generation';
+    font-size: 1rem;
+    width: 100%;
+    color: #78a5af;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+#pero {
+    background: #6ba9f6;
+    border-color: #6ba9f6;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .section .generation h1 {
+        margin-top: 1.5rem;
+    }
+
+    .section .generation,
+    .section .member {
+        width: 100dvw;
+        justify-content: center !important;
+    }
 }
