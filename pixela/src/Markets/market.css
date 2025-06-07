@@ -1,0 +1,29 @@
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.market-container {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.market-heading {
+    width: 90%;
+    text-align: start;
+}
+
+.market-list {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 90%;
+    padding: 2%;
+    border: 5px solid red;
+}
