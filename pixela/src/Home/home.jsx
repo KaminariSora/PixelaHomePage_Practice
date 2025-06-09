@@ -27,22 +27,22 @@ const Home = () => {
                     </div>
                     <div className="box" id='box-2'>
                         <img src='./Images/X.png' alt='X'></img>
-                        <h6>ติดตามข่าวสารได้ที่ (Twitter) หลัก Pixela</h6>
-                        <a href='https://x.com/PixelaProject' target="_blank">@PixelaProject</a>
+                        <h6 className='mitr-regular'>ติดตามข่าวสารได้ที่ (Twitter) หลัก Pixela</h6>
+                        <a href='https://x.com/PixelaProject' target="_blank" className='quicksand'>@PixelaProject</a>
                     </div>
                     <div className="box" id='box-3'>
                         <div className='image-wrapper'>
                             <img src='./Images/Debirun_1.jpg'></img>
                         </div>
-                        <h6 className='quicksand'>รูปภาพโฆษณาสินค้า</h6>
-                        <Link to="/Market" className='anonymous-pro-regular'>ไปหน้าร้านค้า &gt;</Link>
+                        <h6 className='mitr-regular'>รูปภาพโฆษณาสินค้า</h6>
+                        <Link to="/Market" className='mitr-regular'>ไปหน้าร้านค้า &gt;</Link>
                     </div>
                     <div className="box" id='box-4'>
                         <div className='image-wrapper'>
                             <img src='./Images/Debirun_2.jpg'></img>
                         </div>
-                        <h6 className='quicksand'>รูปภาพโฆษณาสินค้า</h6>
-                        <Link to="/Market" className='anonymous-pro-regular'>ไปหน้าร้านค้า &gt;</Link>
+                        <h6 className='mitr-regular'>รูปภาพโฆษณาสินค้า</h6>
+                        <Link to="/Market" className='mitr-regular'>ไปหน้าร้านค้า &gt;</Link>
                     </div>
                 </div>
 

@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
+import './Components/fonts.css'
 import Home from './Home/home.jsx';
 import Member from './Members/members.jsx';
 import Song from './Songs/song.jsx';

@@ -5,6 +5,7 @@ ul {
 .listItem a {
     text-decoration: none;
     color: #FF6EC7;
+    font-weight: bold;
 }
 
 header ul li a {
