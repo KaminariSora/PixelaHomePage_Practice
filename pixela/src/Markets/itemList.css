@@ -11,8 +11,11 @@
     transition: transform .3s ease;
 }
 
-.item-box:hover {
+.item-container:hover .item-box {
     transform: scale(1.05);
+}
+
+.item-container:hover {
     cursor: pointer;
 }
 
@@ -29,7 +32,7 @@
 
 .item-container #item-text .title {
     font-weight: lighter !important;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .item-box img {

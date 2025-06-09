@@ -1,4 +1,5 @@
 import Header from "../Components/header"
+import Footer from "../Components/footer"
 import ItemList from "./itemList"
 import './market.css'
 
@@ -23,6 +24,7 @@ const Market = () => {
                     <ItemList src="./Images/Debirun_2.jpg" text="Debirun 1st Anniversary" price="100.00"/>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

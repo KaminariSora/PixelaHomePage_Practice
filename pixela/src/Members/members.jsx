@@ -1,4 +1,5 @@
 import Header from "../Components/header";
+import Footer from "../Components/footer";
 import './member.css'
 
 const Member = () => {
@@ -178,6 +179,7 @@ const Member = () => {
                         </span>
                     </div>
                 </div>
+                <Footer/>
             </div>
         </div>
     );
