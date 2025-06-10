@@ -19,7 +19,7 @@ const Header = () => {
                         <ul className="navList" type="none">
                             <li className="listItem"><Link to="/Home" className='quicksand navLink'>Home</Link></li>
                             <li className="listItem"><Link to="/Member" className='quicksand navLink'>Member</Link></li>
-                            <li className="listItem"><Link to="/Song" className='quicksand navLink'>Song</Link></li>
+                            {/* <li className="listItem"><Link to="/Song" className='quicksand navLink'>Song</Link></li> */}
                             <li className="listItem"><Link to="/Market" className='quicksand navLink'>Market</Link></li>
                             <li className="listItem"><Link to="/Company" className='quicksand navLink'>Company</Link></li>
                             <li className="listItem"><Link to="/Contact" className='quicksand navLink'>Contact</Link></li>

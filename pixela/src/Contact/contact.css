@@ -1,0 +1,7 @@
+.space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100dvh - 6rem);
+    margin-top: 6rem;
+}
