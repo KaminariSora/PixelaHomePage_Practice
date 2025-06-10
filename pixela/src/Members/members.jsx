@@ -12,19 +12,19 @@ const Member = () => {
                     <div className="member">
                         <span id="hongfei">
                             <a href="https://www.youtube.com/@HinabeHongFei" target="_blank"><img src="/First_generation/Hongfei.png"></img></a>
-                            <div className="member-name"><h4 className="quicksand">Hinabe Hongfei</h4></div>
+                            <div className="member-name"><h4 className="quicksand graduate">Hinabe Hongfei</h4></div>
                         </span>
                         <span id="juju">
                             <a href="https://www.youtube.com/@LagunaJuJu" target="_blank"><img src="/First_generation/Juju.png"></img></a>
-                            <div className="member-name"><h4 className="quicksand">Laguna Juju</h4></div>
+                            <div className="member-name"><h4 className="quicksand graduate">Laguna Juju</h4></div>
                         </span>
                         <span id="zelina">
                             <a href="https://www.youtube.com/@PrincessZelina" target="_blank"><img src="/First_generation/Zelina.png"></img></a>
-                            <div className="member-name"><h4 className="quicksand">Princess Zelina</h4></div>
+                            <div className="member-name"><h4 className="quicksand graduate">Princess Zelina</h4></div>
                         </span>
                         <span id="melita">
                             <a href="https://www.youtube.com/@MelitaX-san" target="_blank"><img src="/First_generation/MelitaX.png"></img></a>
-                            <div className="member-name"><h4 className="quicksand">Melita X</h4></div>
+                            <div className="member-name"><h4 className="quicksand graduate">Melita X</h4></div>
                         </span>
                     </div>
                 </div>
