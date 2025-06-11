@@ -1,11 +1,12 @@
-import Header from "../Components/header";
-import Footer from "../Components/footer";
+import Header from "../Components/ui/header";
+import Footer from "../Components/ui/footer";
+import Particles from "../Components/Particles";
 import './member.css'
 
 const Member = () => {
     return (
         <div>
-            <Header/>
+            <Header />
             <div className="body">
                 <div className="section first">
                     <div className="generation"><h1 className="quicksand project">Pixela Project</h1></div>
@@ -48,6 +49,17 @@ const Member = () => {
                             <div className="member-name"><h4 className="quicksand">Kisuneko Mewten</h4></div>
                         </span>
                     </div>
+                    <Particles
+                        particleColors={['#ffffff', '#ffffff']}
+                        particleCount={300}
+                        particleSpread={20}
+                        speed={0.1}
+                        particleBaseSize={500}
+                        moveParticlesOnHover={true}
+                        alphaParticles={false}
+                        disableRotation={false}
+                        id="backgound-particle-member"
+                    />
                 </div>
                 <div className="section third">
                     <div className="generation"><h1 className="quicksand legend">Pixela Legend</h1></div>
@@ -124,9 +136,9 @@ const Member = () => {
                 <div className="section fifth">
                     <div className="generation"><h1 className="quicksand worldend">Pixela World End</h1></div>
                     <div className="member">                        <span id="mildr">
-                            <a href="https://www.youtube.com/@MildRWorldEnd" target="_blank"><img src="/Worldend/MildR.png"></img></a>
-                            <div className="member-name"><h4 className="quicksand">Mild-R</h4></div>
-                        </span>
+                        <a href="https://www.youtube.com/@MildRWorldEnd" target="_blank"><img src="/Worldend/MildR.png"></img></a>
+                        <div className="member-name"><h4 className="quicksand">Mild-R</h4></div>
+                    </span>
                         <span id="debirun">
                             <a href="https://www.youtube.com/@DebirunWorldEnd" target="_blank"><img src="/Worldend/Debirun.png"></img></a>
                             <div className="member-name"><h4 className="quicksand">Debirun</h4></div>
@@ -139,7 +151,7 @@ const Member = () => {
                         <span id="kona">
                             <a href="https://www.youtube.com/@DrakiKona" target="_blank"><img src="/Second_generation/Kona.png"></img></a>
                             <div className="member-name"><h4 className="quicksand">Draki Kona</h4></div>
-                        </span> 
+                        </span>
                         <span id="reirin">
                             <a href="https://www.youtube.com/@KamiyuReirin" target="_blank"><img src="/Second_generation/Reirin.png"></img></a>
                             <div className="member-name"><h4 className="quicksand">Kamiyu Reirin</h4></div>
@@ -179,7 +191,7 @@ const Member = () => {
                         </span>
                     </div>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     );

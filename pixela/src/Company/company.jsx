@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Header from "../Components/header"
-import Footer from "../Components/footer"
+import Header from "../Components/ui/header"
+import Footer from "../Components/ui/footer"
 import "./company.css"
 
 const Company = () => {

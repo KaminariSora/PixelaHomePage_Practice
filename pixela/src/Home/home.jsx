@@ -1,7 +1,7 @@
 import './body.css'
 import { Link } from "react-router-dom";
-import Header from '../Components/header';
-import Footer from '../Components/footer';
+import Header from '../Components/ui/header';
+import Footer from '../Components/ui/footer';
 
 
 const Home = () => {
@@ -15,12 +15,12 @@ const Home = () => {
                     </video>
                 </div>
                 <div className='innerContainer' id='container-2'>
-                    <div className="box">
-                        <h1 className='quicksand'>Pixela Project คือ?</h1>
-                        <h6 className='quicksand' id='description'>Pixela Official Co., Ltd. was founded in 2021 with the vision to make
+                    <div className="box" id='box-1'>
+                        <h1 className='quicksand bright-text'>Pixela Project คือ?</h1>
+                        <h6 className='quicksand bright-text' id='description'>Pixela Official Co., Ltd. was founded in 2021 with the vision to make
                             virtual characters and virtual influencers (vtubers) that combine the cuteness, funniness
                             and talents with the easy to enjoy anime style avatar.</h6>
-                        <h6 className='quicksand' id='description'>Right now, we have 29 Vtubers in our company with more than 1 million
+                        <h6 className='quicksand bright-text' id='description'>Right now, we have 29 Vtubers in our company with more than 1 million
                             followers in Thailand!</h6>
                     </div>
                     <div className="box" id='box-2'>

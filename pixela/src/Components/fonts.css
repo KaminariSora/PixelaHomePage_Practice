@@ -30,3 +30,7 @@
 .underline {
   text-decoration: underline;
 }
+
+.bright-text {
+    color: #FFD1DC !important;
+}

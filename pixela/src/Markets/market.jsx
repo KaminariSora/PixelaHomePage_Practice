@@ -1,5 +1,5 @@
-import Header from "../Components/header"
-import Footer from "../Components/footer"
+import Header from "../Components/ui/header"
+import Footer from "../Components/ui/footer"
 import ItemList from "./itemList"
 import './market.css'
 
