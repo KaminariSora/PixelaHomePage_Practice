@@ -1,11 +1,17 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import Header from "../Components/ui/header";
 import GridMotion from "../Components/GridMotion";
 import './song.css'
 import Particles from "../Components/Particles";
 import BlurText from "../Components/Blurtext";
 import ShinyText from "../Components/Shinytext";
+import YoutubeIcon from "../Components/icons/youtube";
+import YoutubeMusic from "../Components/icons/youtubeMusic";
 
 const Song = () => {
+    const [youtubeHover, setYoutubeHover] = useState(false);
+    const [youtubeMusicHover, setYoutubeMusicHover] = useState(false);
     const items = [
         'https://i.ytimg.com/vi/ECm0lLTjZxQ/maxresdefault.jpg',
         // <div key='jsx-item-1'>Songs</div>,
@@ -68,6 +74,33 @@ const Song = () => {
                 />
                 <div className="break-point"></div>
                 <ShinyText text="Listen via streaming platforms" disabled={false} speed={3} className='custom-class' />
+                <div className="break-point"></div>
+                <div className="via-container">
+                    <Link className="via-item"
+                        target="_blank"
+                        to="https://www.youtube.com/@PixelaOfficial"
+                        onMouseEnter={() => setYoutubeHover(true)}
+                        onMouseLeave={() => setYoutubeHover(false)}>
+                        <div className="via-icon">
+                            <YoutubeIcon shake={youtubeHover}/>
+                        </div>
+                        <div className="via-box">
+                            <ShinyText text="Youtube" disabled={false} speed={3} className='via-text' />
+                        </div>
+                    </Link>
+                    <Link className="via-item"
+                        target="_blank"
+                        to="https://music.youtube.com/channel/UCanc6lW8Ump8xrIFpvf5Ufw?si=oiqJWAwnsroE3kQq"
+                        onMouseEnter={() => setYoutubeMusicHover(true)}
+                        onMouseLeave={() => setYoutubeMusicHover(false)}>
+                        <div className="via-icon">
+                            <YoutubeMusic shake={youtubeMusicHover}/>
+                        </div>
+                        <div className="via-box">
+                            <ShinyText text="Youtube Music" disabled={false} speed={3} className='via-text' />
+                        </div>
+                    </Link>
+                </div>
             </div>
         </div>
     );
