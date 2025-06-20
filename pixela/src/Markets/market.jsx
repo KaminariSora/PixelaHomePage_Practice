@@ -1,4 +1,5 @@
 import Header from "../Components/ui/header"
+import ProfileBar from "./profileBar"
 import Footer from "../Components/ui/footer"
 import ItemList from "./itemList"
 import './market.css'
@@ -7,6 +8,7 @@ const Market = () => {
     return (
         <div className="market-body">
             <Header />
+            <ProfileBar/>
             <div className="market-container">
                 <h1 className="mitr-regular" id="market-heading">สินค้าทั้งหมด(แค่ตัวอย่างไม่ได้ขายจริง)</h1>
                 <div className="market-list">
