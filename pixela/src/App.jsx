@@ -7,6 +7,7 @@ import Song from './Songs/song.jsx';
 import Market from './Markets/market.jsx';
 import Company from './Company/company.jsx';
 import Contact from './Contact/contact.jsx';
+import Login from './User/Login.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/Market" element={<Market />} />
       <Route path="/Company" element={<Company />} />
       <Route path="/Contact" element={<Contact />} />
+      <Route path="/Login" element={<Login />} />
     </Routes>
   );
 }

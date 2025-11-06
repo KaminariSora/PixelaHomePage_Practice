@@ -9,24 +9,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 4rem;
 }
 
 .profileBar-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 80%;
-    /* border: 1px solid black; */
+    width: 90%;
 }
 
 #profileBar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* border: 1px solid black; */
     width: 20%;
     max-width: 50%;    
+}
+
+.profile-NavList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 40%;
+    flex-direction: row;
 }
 
 .profileBar-container ul li .navLink {
