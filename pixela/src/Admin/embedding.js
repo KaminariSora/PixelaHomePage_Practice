@@ -1,18 +1,15 @@
-// embedding.js
 const axios = require('axios');
 const config = require('./config');
 
 /**
- * สร้าง Vector Embedding จากข้อความโดยเรียก Ollama API
- * @param {string} text - ข้อความ (เช่น description) ที่ต้องการแปลงเป็น Vector
- * @returns {number[]} Array ของ Vector Embedding
+ * @param {string} text
+ * @returns {number[]} 
  */
 async function generateEmbedding(text) {
     if (!config.OLLAMA_API_URL) {
         throw new Error("OLLAMA_API_URL is not set in config.");
     }
     
-    // ทำความสะอาดข้อความ
     const cleanedText = text.replace(/\n/g, " ");
 
     try {
@@ -29,7 +26,6 @@ async function generateEmbedding(text) {
             }
         );
         
-        // คืนค่า Array ของ Vector
         return response.data.embedding; 
 
     } catch (error) {
@@ -38,7 +34,6 @@ async function generateEmbedding(text) {
     }
 }
 
-// *** Export ฟังก์ชันเพื่อให้นำไปใช้ใน main.js ได้ ***
 module.exports = {
     generateEmbedding
 };

@@ -36,7 +36,7 @@ async function upsertProduct(productData) {
         description: productData.description,
         stock: productData.stock,
         image: productData.image,
-        product_embedding: vectorEmbedding // ใช้ Vector ที่สร้างมา
+        product_embedding: vectorEmbedding
     };
 
     const result = await collection.replaceOne(
