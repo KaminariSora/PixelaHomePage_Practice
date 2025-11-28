@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { upsertProduct } = require('./Admin/insertSingleData');
+const { upsertProduct } = require('./src/Admin/insertSingleData');
 
 const myApp = express();
 const port = 4000;
